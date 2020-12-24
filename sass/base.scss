@@ -1,0 +1,45 @@
+$dark-purple: #490849;
+$medium-purple: rgb(107, 0, 128);
+$yellow: #f2aa4c;
+
+$margin-small: 0.5vh;
+$margin-large: 1.1vh;
+$margin-super-large: 1.5vh;
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 14px;
+    @media only screen and (min-width: 800px) {
+        font-size: 15px;
+    }
+}
+body {
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    color: $dark-purple;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: $dark-purple;
+}
+span {
+    color: $dark-purple;
+}
+
+@media (max-height: 735px) {
+    body {
+        overflow: auto;
+    }
+}
