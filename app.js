@@ -30,26 +30,29 @@ window.onload = function () {
                 showElement("nav .nav__menu");
         }, 2200);
         setTimeout(() => {
-                showElement("nav .nav__email");
+                showElement("nav .nav__socials");
         }, 2400);
         setTimeout(() => {
-                showElement(".home__text p");
+                showElement("nav .nav__email");
         }, 2600);
         setTimeout(() => {
+                showElement(".home__text p");
+        }, 2700);
+        setTimeout(() => {
                 showElement(".home__text span");
-        }, 2800);
+        }, 2900);
         setTimeout(() => {
                 showElement(".home__mybrain h2");
                 showList(".home__mybrain h3");
-        }, 3000);
+        }, 3100);
         setTimeout(() => {
                 showList(".badges .badge")
-        }, 3200);
+        }, 3300);
         setTimeout(() => {
                 showElement(".home__mybrain.education h2");
-        }, 4600);
+        }, 4700);
         setTimeout(() => {
                 showList(".timeline .timeline-item")
-        }, 4700);
+        }, 4900);
 
 }
