@@ -14,5 +14,5 @@
 @mixin show ($x:0,$y:10px, $time:1s){
     transform: translate($x,$y);
     opacity: 0;
-    transition: all $time ease;
+    animation: translate $time ease;
 }
