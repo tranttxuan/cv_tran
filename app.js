@@ -25,34 +25,34 @@ window.onload = function () {
         }, 1500);
         setTimeout(() => {
                 showElement("nav a h1")
-        }, 2000);
-        setTimeout(() => {
-                showElement("nav .nav__menu");
-        }, 2200);
-        setTimeout(() => {
-                showElement("nav .nav__socials");
         }, 2400);
         setTimeout(() => {
-                showElement("nav .nav__email");
+                showElement("nav .nav__menu");
         }, 2600);
         setTimeout(() => {
+                showElement("nav .nav__socials");
+        }, 2800);
+        setTimeout(() => {
+                showElement("nav .nav__email");
+        }, 3000);
+        setTimeout(() => {
                 showElement(".home__text p");
-        }, 2700);
+        }, 3200);
         setTimeout(() => {
                 showElement(".home__text span");
-        }, 2900);
+        }, 3400);
         setTimeout(() => {
                 showElement(".home__mybrain h2");
                 showList(".home__mybrain h3");
-        }, 3100);
+        }, 3600);
         setTimeout(() => {
                 showList(".badges .badge")
-        }, 3300);
+        }, 3700);
         setTimeout(() => {
                 showElement(".home__mybrain.education h2");
-        }, 4700);
+        }, 5000);
         setTimeout(() => {
                 showList(".timeline .timeline-item")
-        }, 4900);
+        }, 5200);
 
 }
