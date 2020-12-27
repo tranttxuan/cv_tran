@@ -441,7 +441,7 @@ span {
     width: 50vw;
     height: 100vh;
     background-color: #490849;
-    transition: all 1s ease;
+    transition: height 1s ease;
     z-index: 2; }
     .intro__half:last-child {
       left: 50vw;

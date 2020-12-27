@@ -36,7 +36,7 @@ window.onload = function () {
                 showElement("nav .nav__email");
         }, 3000);
         setTimeout(() => {
-                showElement(".home__text p");
+                showList(".home__text p");
         }, 3200);
         setTimeout(() => {
                 showElement(".home__text span");

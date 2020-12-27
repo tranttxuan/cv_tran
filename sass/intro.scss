@@ -11,7 +11,7 @@
                 height: 100vh;
                 background-color: $dark-purple;
                 // -webkit-transition: height 0.3s ease;
-                transition: all 1s ease;
+                transition: height 1s ease;
                 z-index: 2;
                 
                 &:last-child{
