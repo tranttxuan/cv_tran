@@ -29,7 +29,7 @@ a {
 span {
   color: #490849; }
 
-@media (max-height: 735px) {
+@media (max-height: 800px) {
   body {
     overflow: auto; } }
 
@@ -78,7 +78,7 @@ span {
     flex-direction: column; }
   .home__text p {
     font-size: calc(1.5vw + 1.5vh);
-    line-height: 1.2;
+    line-height: 1.5;
     font-weight: 700;
     transform: translate(0, 10px);
     opacity: 0;
@@ -293,6 +293,10 @@ span {
     .home h3 {
       font-size: 1.5rem; } }
 
+@media (max-height: 800px) {
+  .home {
+    padding-top: 10rem; } }
+
 .nav {
   position: fixed;
   top: 0;
@@ -316,23 +320,32 @@ span {
     right: 20px;
     top: 20px;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     text-align: right;
     transform: translate(0, 10px);
     opacity: 0;
     animation: translate 1s ease; }
     .nav__menu__link {
+      position: relative;
       display: inline-block;
       font-weight: 700;
       font-size: 1rem;
-      padding: 2px 0;
-      height: 20px; }
-      .nav__menu__link span {
-        display: inline-block; }
+      padding: 2px;
+      background: transparent;
+      transition: all 0.7s ease-out;
+      background: linear-gradient(270deg, rgba(242, 170, 76, 0.8), rgba(146, 111, 52, 0.8), rgba(34, 34, 34, 0), rgba(34, 34, 34, 0));
+      background-position: 1% 50%;
+      background-size: 300% 300%;
+      border: none;
+      border: 1px solid rgba(223, 190, 106, 0.3); }
       .nav__menu__link:hover {
-        padding-bottom: 20px;
-        transform: translate(-2px, 0px);
-        text-shadow: 0px 3px 3px #6b0080; }
+        border: 1px solid rgba(223, 190, 106, 0);
+        background-position: 99%; }
+        .nav__menu__link:hover span {
+          color: #fff; }
   .nav__socials {
     position: fixed;
     right: auto;
