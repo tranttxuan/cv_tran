@@ -11,8 +11,8 @@
     }
 }
 
-@mixin show ($x:0,$y:10px, $time:1s){
+@mixin show ($x:-50px,$y:0px, $time:2s){
     transform: translate($x,$y);
     opacity: 0;
-    animation: translate $time ease;
+    transition: all $time ease;
 }

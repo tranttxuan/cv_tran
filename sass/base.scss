@@ -1,6 +1,7 @@
-$dark-purple: #490849;
+$dark-purple: #9369a8;
 $medium-purple: rgb(107, 0, 128);
-$yellow: #f2aa4c;
+$illuminating: #f3df4d;
+$gray: #939597;
 
 $margin-small: 0.5vh;
 $margin-large: 1.1vh;
@@ -22,10 +23,11 @@ html {
 body {
     font-family: "Playfair Display", serif;
     font-weight: 400;
-    color: $dark-purple;
+    color: $illuminating;
     width: 100%;
     height: 100%;
     overflow: hidden;
+    background-color: $gray;
 }
 ul {
     list-style: none;

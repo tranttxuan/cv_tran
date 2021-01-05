@@ -1,33 +1,33 @@
 .intro {
-        position: fixed;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+
+    &__half {
+        position: absolute;
         top: 0;
-        z-index: 1000;
-        
-        &__half{
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 50vw;
-                height: 100vh;
-                background-color: $dark-purple;
-                // -webkit-transition: height 0.3s ease;
-                transition: height 1s ease;
-                z-index: 2;
-                
-                &:last-child{
-                        left: 50vw;
-                        background-color: $dark-purple;
-                }
+        left: 0;
+        width: 50vw;
+        height: 100vh;
+        background-color: $dark-purple;
+        // -webkit-transition: height 0.3s ease;
+        transition: left 1.5s ease-in-out;
+        z-index: 2;
+
+        &:last-child {
+            left: 50vw;
+            background-color: $dark-purple;
         }
-        &__ver{
-                position: absolute;
-                top: 0;
-                height: 0;
-                opacity: 1;
-                left: calc(50vw - 5px);
-                width: 5px;
-                background-color: $yellow;
-                z-index: 2;
-                transition: all 1s;
-        }
+    }
+    &__ver {
+        position: absolute;
+        top: 0;
+        height: 0;
+        opacity: 1;
+        left: calc(50vw - 5px);
+        width: 5px;
+        background-color: $illuminating;
+        z-index: 2;
+        transition: all 1.5s;
+    }
 }

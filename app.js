@@ -23,38 +23,38 @@ window.onload = function () {
         setTimeout(() => {
                 document.querySelector(".intro__half.first").style.left = '-50vw';
                 document.querySelector(".intro__half.second").style.left = '100vw';
-        }, 1500);
+        }, 1700);
         setTimeout(() => {
                 showElement("nav a h1")
-        }, 2400);
-        setTimeout(() => {
-                showElement("nav .nav__menu");
-        }, 2600);
-        setTimeout(() => {
-                showElement("nav .nav__socials");
-        }, 2800);
-        setTimeout(() => {
-                showElement("nav .nav__email");
-        }, 3000);
-        setTimeout(() => {
-                showList(".home__text p");
         }, 3200);
         setTimeout(() => {
+                showElement("nav .nav__menu");
+        }, 3500);
+        setTimeout(() => {
+                showElement("nav .nav__socials");
+        }, 3800);
+        setTimeout(() => {
+                showElement("nav .nav__email");
+        }, 4100);
+        setTimeout(() => {
+                showList(".home__text p");
+        }, 4400);
+        setTimeout(() => {
                 showElement(".home__text span");
-        }, 3400);
+        }, 4700);
         setTimeout(() => {
                 showElement(".home__mybrain h2");
                 showList(".home__mybrain h3");
-        }, 3600);
-        setTimeout(() => {
-                showList(".badges .badge")
-        }, 3700);
-        setTimeout(() => {
-                showElement(".home__mybrain.education h2");
         }, 5000);
         setTimeout(() => {
+                showList(".badges .badge")
+        }, 5300);
+        setTimeout(() => {
+                showElement(".home__mybrain.education h2");
+        }, 6500);
+        setTimeout(() => {
                 showList(".timeline .timeline-item")
-        }, 5200);
+        }, 7000);
 
 }
 

@@ -30,7 +30,6 @@
 .main {
     width: 100%;
     height: 100%;
-    // z-index: 9999;
 }
 .home {
     position: relative;
@@ -45,22 +44,12 @@
     &__wrap {
         height: 100%;
         text-align: center;
-        // display: -webkit-box;
-        // display: -ms-flexbox;
         display: flex;
-        // -webkit-box-orient: vertical;
-        // -webkit-box-direction: normal;
-        // -ms-flex-direction: column;
         flex-direction: column;
     }
 
     &__text {
-        // position: relative;
-
-        // z-index: 1;
-
         & p {
-            // overflow: hidden;
             font-size: calc(1.5vw + 1.5vh);
             line-height: 1.5;
             font-weight: 700;
@@ -68,8 +57,6 @@
         }
 
         & span {
-            // margin-top: 0.8rem;
-            // position: relative;
             font-size: calc(1.2vw + 1.2vh);
             @include show;
             & div {
@@ -96,9 +83,7 @@
             @include show;
         }
         & .brain-grid {
-            //     display: -ms-grid;
             display: grid;
-            //     -ms-grid-columns: (1fr) [1];
             grid-template-columns: repeat(1, 1fr);
             gap: 0.8rem;
         }
@@ -106,10 +91,7 @@
 }
 
 .badges {
-    // display: -webkit-box;
-    // display: -ms-flexbox;
     display: flex;
-    // -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 
     & .badge {
@@ -133,8 +115,7 @@
             width: calc(100% + 10px);
             background-color: $dark-purple;
             z-index: -1;
-            // -webkit-transition: 0.1s ease-out;
-            transition: 0.1s ease-out;
+            transition: background-color 0.2s ease-out;
         }
 
         &::before {
@@ -162,6 +143,7 @@
 }
 .timeline {
     width: 100%;
+
     &-item {
         padding-left: 40px;
         position: relative;
@@ -175,6 +157,10 @@
         white-space: nowrap;
         text-align: start;
         padding-bottom: 0.2rem;
+
+        & span {
+            color: $illuminating;
+        }
     }
     &-marker {
         position: absolute;
@@ -183,9 +169,8 @@
         left: 0;
         width: 15px;
         &::before {
-            background-color: $yellow;
+            background-color: $illuminating;
             box-shadow: 0px 1px 7px 0.8px $dark-purple;
-            border: 3px solid transparent;
             border-radius: 100%;
             content: "";
             display: block;
@@ -194,7 +179,8 @@
             top: 4px;
             left: 0;
             width: 15px;
-            transition: background 0.3s ease-in-out, border 0.3s ease-in-out;
+            transform: scale(1);
+            transition: background 0.3s ease-in-out, scale 0.1s;
         }
         &:after {
             content: "";
@@ -208,7 +194,8 @@
         }
     }
     &-item:hover &-marker::before {
-        background: transparent;
+        background: rgba($dark-purple, 0.2);
+        transform: scale(1.2);
     }
 
     &-content {
@@ -216,12 +203,13 @@
         p {
             text-align: start;
             font-size: 0.9rem;
-            i{
+            color: $dark-purple;
+            i {
                 font-size: 2rem;
                 cursor: pointer;
                 transition: all 0.2s;
-                &:hover{
-                  color: $yellow;
+                &:hover {
+                    color: $illuminating;
                 }
             }
         }
@@ -238,13 +226,12 @@
 
         &__mybrain {
             & .brain-grid {
-                // -ms-grid-columns: (1fr)[2];
                 grid-template-columns: repeat(2, 1fr);
                 gap: 10px;
             }
         }
     }
-    .timeline{
+    .timeline {
         margin: 0.5rem auto;
         width: max-content;
     }
@@ -312,7 +299,6 @@
             margin-top: 3rem;
 
             & .brain-grid {
-                // -ms-grid-columns: (1fr)[3];
                 grid-template-columns: repeat(3, 1fr);
                 gap: 20px;
             }
@@ -335,6 +321,5 @@
 @media (max-height: 800px) {
     .home {
         padding-top: 10rem;
-       
     }
 }
