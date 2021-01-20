@@ -14,23 +14,23 @@ html {
 body {
   font-family: "Playfair Display", serif;
   font-weight: 400;
-  color: #f3df4d;
+  color: #394989;
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background-color: #939597; }
+  background-color: #fff48f; }
 
 ul {
   list-style: none; }
 
 a {
   text-decoration: none;
-  color: #9369a8; }
+  color: #3b2e5a; }
 
 span {
-  color: #9369a8; }
+  color: #3b2e5a; }
 
-@media (max-height: 800px) {
+@media (max-height: 850px) {
   body {
     overflow: auto; } }
 
@@ -135,7 +135,7 @@ span {
       position: absolute;
       height: 50%;
       width: calc(100% + 10px);
-      background-color: #9369a8;
+      background-color: #3b2e5a;
       z-index: -1;
       transition: all 0.2s ease-out; }
     .badges .badge::before {
@@ -188,7 +188,7 @@ span {
     text-align: start;
     padding-bottom: 0.2rem; }
     .timeline-info span {
-      color: #f3df4d; }
+      color: #394989; }
   .timeline-marker {
     position: absolute;
     top: 0;
@@ -196,8 +196,8 @@ span {
     left: 0;
     width: 15px; }
     .timeline-marker::before {
-      background-color: #f3df4d;
-      box-shadow: 0px 1px 7px 0.8px #9369a8;
+      background-color: #394989;
+      box-shadow: 0px 1px 7px 0.8px #3b2e5a;
       border-radius: 100%;
       content: "";
       display: block;
@@ -218,20 +218,20 @@ span {
       bottom: 0;
       left: 6px; }
   .timeline-item:hover .timeline-marker::before {
-    background: rgba(147, 105, 168, 0.2);
+    background: rgba(59, 46, 90, 0.2);
     transform: scale(1.2); }
   .timeline-content {
     margin-bottom: 0.5vh; }
     .timeline-content p {
       text-align: start;
       font-size: 0.9rem;
-      color: #9369a8; }
+      color: #3b2e5a; }
       .timeline-content p i {
         font-size: 2rem;
         cursor: pointer;
         transition: all 0.2s; }
         .timeline-content p i:hover {
-          color: #f3df4d; }
+          color: #4ea0ae; }
     .timeline-content h3 {
       margin-bottom: 0; }
 
@@ -315,7 +315,12 @@ span {
   .nav__logo {
     position: fixed;
     top: 20px;
-    left: 20px; }
+    left: 20px;
+    transform: translate(0px, 0px) scale(1);
+    transition: all 2s ease-in; }
+    .nav__logo:hover {
+      color: #4ea0ae;
+      transform: translate(5px, 5px) scale(1.1); }
     .nav__logo a h1 {
       display: inline-block;
       font-size: 1.28rem;
@@ -326,6 +331,8 @@ span {
       transform: translate(-50px, 0px);
       opacity: 0;
       transition: all 2s ease; }
+      .nav__logo a h1:hover {
+        color: #4ea0ae; }
   .nav__menu {
     position: fixed;
     right: 20px;
@@ -347,7 +354,7 @@ span {
       padding: 2px;
       background: transparent;
       transition: all 0.7s ease-out;
-      background: linear-gradient(270deg, rgba(243, 223, 77, 0.8), rgba(146, 111, 52, 0.8), rgba(34, 34, 34, 0), rgba(34, 34, 34, 0));
+      background: linear-gradient(270deg, rgba(57, 73, 137, 0.8), rgba(146, 111, 52, 0.8), rgba(34, 34, 34, 0), rgba(34, 34, 34, 0));
       background-position: 1% 50%;
       background-size: 300% 300%;
       border: none; }
@@ -372,12 +379,16 @@ span {
       display: flex;
       justify-content: center;
       align-items: center;
-      cursor: pointer; }
+      cursor: pointer;
+      transform: translate(0px, 0px) scale(1);
+      transition: all 2s ease-in; }
+      .nav__socials__link:hover {
+        transform: translate(5px, 5px) scale(1.1); }
       .nav__socials__link i {
-        color: #9369a8;
+        color: #3b2e5a;
         transition: 0.3s ease; }
         .nav__socials__link i:hover, .nav__socials__link i:visited {
-          color: #f3df4d; }
+          color: #4ea0ae; }
   .nav__email {
     position: fixed;
     bottom: auto;
@@ -387,13 +398,12 @@ span {
     transform: translate(-50px, 0px);
     opacity: 0;
     transition: all 2s ease; }
-    .nav__email a {
-      color: #9369a8;
-      font-size: 0.9rem; }
     .nav__email span {
-      display: inline-block; }
+      display: inline-block;
+      color: #3b2e5a;
+      font-size: 0.9rem; }
       .nav__email span:hover {
-        text-decoration: underline #6b0080; }
+        text-decoration: underline #4ea0ae; }
 
 @media only screen and (min-width: 600px) {
   .nav__logo,
@@ -461,12 +471,12 @@ span {
     left: 0;
     width: 50vw;
     height: 100vh;
-    background-color: #9369a8;
+    background-color: #3b2e5a;
     transition: left 1.5s ease-in-out;
     z-index: 2; }
     .intro__half:last-child {
       left: 50vw;
-      background-color: #9369a8; }
+      background-color: #3b2e5a; }
   .intro__ver {
     position: absolute;
     top: 0;
@@ -474,6 +484,6 @@ span {
     opacity: 1;
     left: calc(50vw - 5px);
     width: 5px;
-    background-color: #f3df4d;
+    background-color: #fff48f;
     z-index: 2;
     transition: all 1.5s; }

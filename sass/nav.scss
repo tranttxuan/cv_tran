@@ -7,6 +7,12 @@
         position: fixed;
         top: 20px;
         left: 20px;
+        transform: translate(0px, 0px) scale(1);
+        transition: all 2s ease-in;
+        &:hover {
+            color: $deepblue;
+            transform: translate(5px, 5px) scale(1.1);
+        }
 
         & a h1 {
             display: inline-block;
@@ -16,6 +22,9 @@
             word-spacing: 2px;
             letter-spacing: 0.5px;
             @include show;
+            &:hover {
+                color: $deepblue;
+            }
         }
     }
 
@@ -42,7 +51,7 @@
             transition: all 0.7s ease-out;
             background: linear-gradient(
                 270deg,
-                rgba($illuminating, 0.8),
+                rgba($blue, 0.8),
                 rgba(146, 111, 52, 0.8),
                 rgba(34, 34, 34, 0),
                 rgba(34, 34, 34, 0)
@@ -77,6 +86,11 @@
             justify-content: center;
             align-items: center;
             cursor: pointer;
+            transform: translate(0px, 0px) scale(1);
+            transition: all 2s ease-in;
+            &:hover {
+                transform: translate(5px, 5px) scale(1.1);
+            }
 
             & i {
                 color: $dark-purple;
@@ -84,7 +98,7 @@
 
                 &:hover,
                 &:visited {
-                    color: $illuminating;
+                    color: $deepblue;
                 }
             }
         }
@@ -96,16 +110,16 @@
         top: 50px;
         left: 20px;
         height: 1.43rem;
+ 
         @include show;
 
-        & a {
-            color: $dark-purple;
-            font-size: 0.9rem;
-        }
         & span {
             display: inline-block;
+            color: $dark-purple;
+            font-size: 0.9rem;
+    
             &:hover {
-                text-decoration: underline $medium-purple;
+                text-decoration: underline $deepblue;
             }
         }
     }
