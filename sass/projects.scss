@@ -1,0 +1,80 @@
+.projects {
+    width: 100%;
+    & h2 {
+        font-weight: 600;
+        font-size: 1.15rem;
+        margin-bottom: $margin-large;
+        @include show;
+    }
+    &-grid {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    & .project {
+        padding: 2%;
+        margin-bottom: 2%;
+        @include show;
+
+        & figure {
+            position: relative;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            width: 200px;
+            height: 160px;
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+            transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+            overflow: hidden;
+            &:before {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                content: "";
+                background-color: none;
+                z-index: 0;
+            }
+            & figcaption {
+                position: absolute;
+                top: 0;
+                left: 0;
+                color: $yellow;
+                transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+                z-index: 4;
+                display: none;
+                transform: translateY(200px);
+            }
+            & img {
+                width: 200px;
+                height: 160px;
+                object-fit: fill;
+                transform: scale(1.1);
+            }
+            & i,
+            & h5,
+            a {
+                color: $yellow;
+                padding: 5px;
+            }
+
+            &:hover {
+                &::before {
+                    background-color: rgba($dark-purple, 0.8);
+                    z-index: 2;
+                }
+                & img {
+                    transform: scale(1);
+                }
+                & figcaption {
+                    transform: translateY(40px);
+                    display: block;
+                }
+                & a {
+                    z-index: 10;
+                }
+            }
+        }
+    }
+}

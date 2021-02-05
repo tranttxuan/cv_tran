@@ -50,10 +50,10 @@ window.onload = function () {
                 showList(".badges .badge")
         }, 5300);
         setTimeout(() => {
-                showElement(".home__mybrain.education h2");
+                showElement(".home__mybrain.projects h2");
         }, 6500);
         setTimeout(() => {
-                showList(".timeline .timeline-item")
+                showList(".projects .project")
         }, 7000);
 
 }
